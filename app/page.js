@@ -12,10 +12,10 @@ function Titulo({x, y}){
 
   function SubTitulo({x, y}){
     return(
-      <p style={{left:x, top:y}}className={styles.subTitulo}>
+      <h3 style={{left:x, top:y}}className={styles.subTitulo}>
       Mayami is more than a honeymoon destination – <br/>
       it’s a perfect romantic spot for couples who like <br/> 
-      spending time in beach. </p>
+      spending time in beach. </h3>
     )
   };
   

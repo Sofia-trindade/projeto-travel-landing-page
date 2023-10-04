@@ -32,6 +32,23 @@ function Menu({children, x, y}){
   )
 }
 
+function Contato({telefone, x, y}){
+  return (
+    <p style={{left:x, top:y}} 
+    className={styles.contato}>
+    +38(097)8849989
+    </p>
+  )
+}
+
+function Icone({x, y}){
+  return(
+    <p style={{left:x, top:y}} className={styles.icone}>
+    <img src='phone icon.png' alt='Phone'/>
+    </p>
+  )
+
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -46,6 +63,9 @@ export default function RootLayout({ children }) {
           <ItemMenu nome = 'Blog'/>
           <ItemMenu nome = 'Videos'/>
           </Menu>
+          <Icone x={1102} y={66}/>
+          <Contato x={1135} y={63}/>
+
           
         </header>
 

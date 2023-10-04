@@ -30,5 +30,25 @@
     
 }
 
-  
+.contato {
+    font-size: 19.205px;
+    font-weight: 500;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+    width: 169px;
+    height: 23.045px;
+}
+
+.icone {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+}
+
 

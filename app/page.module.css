@@ -1,5 +1,5 @@
 .titulo {
-    font-family: Montserrat; 
+   
     font-size: 78.65px; 
     font-weight: 600; 
     margin: 0;
@@ -10,9 +10,11 @@
 }
 
 .subTitulo {
-    font-family: Montserrat;
+    
     font-size: 20.285px;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
     position: absolute;
 
 }
