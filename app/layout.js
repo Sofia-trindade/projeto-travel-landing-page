@@ -32,7 +32,7 @@ function Menu({children, x, y}){
   )
 }
 
-function Contato({telefone, x, y}){
+function Contato({x, y}){
   return (
     <p style={{left:x, top:y}} 
     className={styles.contato}>
