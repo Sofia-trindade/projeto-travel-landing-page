@@ -32,6 +32,7 @@ function Menu({children, x, y}){
   )
 }
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
