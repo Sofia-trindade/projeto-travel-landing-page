@@ -41,7 +41,7 @@
     height: 23.045px;
 }
 
-.icone {
+.iconePhone {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -49,6 +49,13 @@
     width: 19px;
     height: 19px;
     flex-shrink: 0;
+}
+
+.redesSociais {
+    align-items: center;
+    display: flex;
+    gap: 38px;
+    position: absolute;
 }
 
 

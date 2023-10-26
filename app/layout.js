@@ -1,8 +1,10 @@
 import './globals.css'
 import styles from './styles.module.css'
 // import {Quicksand} from 'next/font/google'
-
-
+import Image from 'next/image';
+import facebook from '../public/facebook.svg'
+import twitter from '../public/twitter.svg'
+import linkedin from '../public/linkedin.svg'
 
 export const metadata = {
   title: 'Travel Landing Page',
@@ -41,13 +43,23 @@ function Contato({x, y}){
   )
 }
 
-function Icone({x, y}){
+function IconePhone({x, y}){
   return(
-    <p style={{left:x, top:y}} className={styles.icone}>
+    <p style={{left:x, top:y}} className={styles.iconePhone}>
     <img src='phone icon.png' alt='Phone'/>
     </p>
   )
 
+}
+
+function RedesSociais({x, y}){
+  return(
+    <div style={{left: x, top: y}} className={styles.redesSociais}>
+      <Image src={facebook}/>
+      <Image src={twitter}/>
+      <Image src={linkedin}/>
+    </div>
+  )
 }
 
 export default function RootLayout({ children }) {
@@ -63,7 +75,7 @@ export default function RootLayout({ children }) {
           <ItemMenu nome = 'Blog'/>
           <ItemMenu nome = 'Videos'/>
           </Menu>
-          <Icone x={1102} y={66}/>
+          <IconePhone x={1102} y={66}/>
           <Contato x={1135} y={63}/>
 
           
@@ -72,6 +84,10 @@ export default function RootLayout({ children }) {
         <main>
         {children}
         </main>
+
+        <footer>
+          <RedesSociais x={1175} y={843}/>
+        </footer>
       
         </body>
     </html>
